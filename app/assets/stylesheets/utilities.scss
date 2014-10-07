@@ -1,0 +1,153 @@
+/* ---------- CSS Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+select { outline: none; }
+/* ---------- END CSS Reset ---------- */
+
+/* ---------- Global ---------- */
+body { line-height: 1; font-size: 12px; }
+a { text-decoration: none; }
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+ol, ul { list-style: none; }
+.transition {
+  -webkit-transition:  0.4s;
+  -moz-transition:     0.4s;
+  -o-transition:       0.4s;
+  transition:          0.4s;
+}
+.transition-fast {
+  -webkit-transition:  0.1s;
+  -moz-transition:     0.1s;
+  -o-transition:       0.1s;
+  transition:          0.1s;
+}
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center!important; }
+.text-justify { text-align: justify; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.hide { display: none; }
+.hidden { display:none!important; }
+.visible { overflow: visible!important; }
+.pointer { cursor: pointer; }
+.vm {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.nowrap { white-space: nowrap; }
+textarea.noresize { resize: none; }
+textarea.textfield { height: auto; }
+.bd-none { border: none!important; }
+.box-sh-none {
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow:    none!important;
+  box-shadow:         none!important;
+}
+/* ---------- END Global ---------- */
+
+/* ---------- Radius ---------- */
+.radius2 {
+  -webkit-border-radius:  2px;
+  -moz-border-radius:     2px;
+  border-radius:          2px;
+}
+.radius4 {
+  -webkit-border-radius:  4px;
+  -moz-border-radius:     4px;
+  border-radius:          4px;
+}
+.radius6 {
+  -webkit-border-radius:  6px;
+  -moz-border-radius:     6px;
+  border-radius:          6px;
+}
+.radius8 {
+  -webkit-border-radius:  8px;
+  -moz-border-radius:     8px;
+  border-radius:          8px;
+}
+.radius10 {
+  -webkit-border-radius:  10px;
+  -moz-border-radius:     10px;
+  border-radius:          10px;
+}
+.radius-large {
+  -webkit-border-radius:  50px;
+  -moz-border-radius:     50px;
+  border-radius:          50px;
+}
+.radius-xlarge {
+  -webkit-border-radius:  100px;
+  -moz-border-radius:     100px;
+  border-radius:          100px;
+}
+/* ---------- END Radius ---------- */
+
+/* ---------- Grids ---------- */
+.span1, .span2, .span3, .span4,
+.span5, .span6, .span7, .span8,
+.span9, .span10, .span11, .span12 {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+}
+
+.span1  { width: 8.333333333333332%; }
+.span2  { width: 16.666666666666664%; }
+.span3  { width: 25%; }
+.span4  { width: 33.33333333333333%; }
+.span5  { width: 41.66666666666667%; }
+.span6  { width: 50%; }
+.span7  { width: 58.333333333333336%; }
+.span8  { width: 66.66666666666666%; }
+.span9  { width: 75%; }
+.span10 { width: 83.33333333333334%; }
+.span11 { width: 91.66666666666666%; }
+.span12 { width: 100%; }
+
+.row1  { min-height: 8.333333333333332%; }
+.row2  { min-height: 16.666666666666664%; }
+.row3  { min-height: 25%; }
+.row4  { min-height: 33.33333333333333%; }
+.row5  { min-height: 41.66666666666667%; }
+.row6  { min-height: 50%; }
+.row7  { min-height: 58.333333333333336%; }
+.row8  { min-height: 66.66666666666666%; }
+.row9  { min-height: 75%; }
+.row10 { min-height: 83.33333333333334%; }
+.row11 { min-height: 91.66666666666666%; }
+.row12 { min-height: 100%; }
+/* ---------- END Grids ---------- */

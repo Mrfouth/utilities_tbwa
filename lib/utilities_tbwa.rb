@@ -1,5 +1,8 @@
 require "utilities_tbwa/version"
 
 module UtilitiesTbwa
-  # Your code goes here...
+  module Rails
+  	class Engine < ::Rails::Engine
+  	end
+  end
 end
