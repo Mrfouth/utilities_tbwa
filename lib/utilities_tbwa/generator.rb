@@ -6,26 +6,26 @@ module UtilitiesTbwa
 	class Generator < Thor
 		map ['-v', '--version'] => :version
 
-		desc 'install', 'Install Utilities_tbwa into your project'
+		desc 'install', 'Install utilities_tbwa into your project'
 		method_options :path => :string, :force => :boolean
 		def install
       if utilities_already_exist? && !options[:force]
-        puts "Utilities already installed, doing nothing."
+        puts "UtilitiesTbwa already installed, doing nothing."
       else
         install_files
-        puts "Utilities installed to #{install_path}/"
+        puts "UtilitiesTbwa installed to #{install_path}/"
       end
     end
     
-    desc 'update', 'Update Utilities_tbwa'
+    desc 'update', 'Update utilities_tbwa'
     method_options :path => :string
     def update
       if utilities_already_exist?
         remove_utilities_directory
         install_files
-        puts "Utilities updated."
+        puts "UtilitiesTbwa updated."
       else
-        puts "No existing utilities installation. Doing nothing."
+        puts "No existing utilities_tbwa installation. Doing nothing."
       end
     end
 

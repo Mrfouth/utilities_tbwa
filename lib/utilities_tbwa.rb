@@ -22,7 +22,7 @@ module UtilitiesTbwa
 	  	end
 	  end
 	else
-		utillities_path = File.expand_path("../../app/assets/stylesheets", __FILE__)
-    ENV["SASS_PATH"] = [ENV["SASS_PATH"], utillities_path].compact.join(File::PATH_SEPARATOR)
+		utillities_tbwa_path = File.expand_path("../../app/assets/stylesheets", __FILE__)
+    ENV["SASS_PATH"] = [ENV["SASS_PATH"], utillities_tbwa_path].compact.join(File::PATH_SEPARATOR)
 	end
 end

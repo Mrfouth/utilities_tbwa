@@ -1,4 +1,4 @@
-module Utilities
+module UtilitiesTbwa
   class Engine < Rails::Engine
     # auto wire
   end
