@@ -1,22 +1,24 @@
 # UtilitiesTbwa
 
-TODO: Write a gem description
+A simple tool for TBWA web apps
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1. Add this line to your application's Gemfile:
 
-```ruby
-gem 'utilities_tbwa'
-```
+	gem 'utilities_tbwa'
 
-And then execute:
+2. And then execute:
 
-    $ bundle
+		$ bundle install
 
-Or install it yourself as:
+	Or install it yourself as:
 
-    $ gem install utilities_tbwa
+		$ gem install utilities_tbwa
+
+3. Execute this line to install files into your project's "app" directory for furture use:
+
+		$ utilities_tbwa install
 
 ## Usage
 
