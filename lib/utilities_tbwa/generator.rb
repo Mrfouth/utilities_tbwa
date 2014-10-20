@@ -42,9 +42,9 @@ module UtilitiesTbwa
 
     def install_path
       @install_path ||= if options[:path]
-          Pathname.new(File.join(options[:path], 'app/assets/stylesheets/utilities'))
+          Pathname.new(File.join(options[:path], 'app/assets/stylesheets/utilities_tbwa'))
         else
-          Pathname.new('app/assets/stylesheets/utilities')
+          Pathname.new('app/assets/stylesheets/utilities_tbwa')
         end
     end
 
@@ -54,7 +54,7 @@ module UtilitiesTbwa
     end
 
     def remove_utilities_directory
-      FileUtils.rm_rf("app/assets/stylesheets/utilities")
+      FileUtils.rm_rf("app/assets/stylesheets/utilities_tbwa")
     end
 
     def make_install_directory

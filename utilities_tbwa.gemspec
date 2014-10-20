@@ -1,6 +1,5 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'utilities_tbwa/version'
 
 Gem::Specification.new do |spec|
@@ -13,9 +12,12 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "MIT"
 
+  spec.rubyforge_project = "utilities_tbwa"
+
   spec.files         = `git ls-files -z`.split("\x0")
   spec.require_paths = ["lib"]
 
+  spec.add_dependency('sass', '~> 3.3')
   spec.add_dependency('thor')
   
   spec.add_development_dependency "bundler", "~> 1.7"
