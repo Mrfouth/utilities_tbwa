@@ -15,7 +15,7 @@ module UtilitiesTbwa
     end
 
     module Rails
-	  	class Railtie < ::Rails::Engine
+	  	class Railtie < ::Rails::Railtie
 	  		rake_tasks do
           load "tasks/install.rake"
         end

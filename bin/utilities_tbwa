@@ -3,4 +3,4 @@
 # CodeKit needs relative paths
 require File.dirname(__FILE__) + '/../lib/utilities_tbwa.rb'
 
-Bourbon::Generator.start
+UtilitiesTbwa::Generator.start
