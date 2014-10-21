@@ -5,12 +5,6 @@ end
 Given /^I install utilities_tbwa to "([^"]*)"$/ do |path|
 end
 
-Then /^the sass directories(?: with "([^"]+)" prefix)? should have been generated$/ do |prefix|
-  sass_directories = ["utilities_tbwa"]
-  sass_directories.map!{ |directory| utilities_tbwa_path(prefix, directory) }
-  check_directory_presence(sass_directories, true)
-end
-
 Then /^utilities_tbwa should not have been generated$/ do
   check_directory_presence(['utilities_tbwa'], false)
 end
